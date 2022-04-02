@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>colletor</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="description" content="Description">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar-folder.min.css"/>
+    <link rel="icon" href="_media/icon.svg" type="image/x-icon"/>
+    <link rel="shortcut icon" href="_media/icon.svg" type="image/x-icon"/>
+</head>
+<body>
+<div id="app">加载中</div>
+<script>
+    window.$docsify = {
+        // logo: '/_media/icon.svg',
+        name: 'colletor',
+        repo: '',
+        loadSidebar: true,// 加载侧边栏
+        subMaxLevel: 2,
+        loadNavbar: true, // 加载导航栏
+        sidebarDisplayLevel: 1,
+        // 搜索
+        search: {
+            noData: {
+                '/': '没有结果!'
+            },
+            paths: 'auto',
+            placeholder: {
+                '/': '搜索'
+            },
+            depth: 2
+        },
+        // 设置封面
+        coverpage: true,
+        // 自定义方面文件
+        coverpage: 'cover.md',
+        // 多语言封面
+        coverpage: ['/', '/zh-cn/'],
+        // 自定义多语言封面文件
+        coverpage: {
+            '/': 'cover.md',
+            '/zh-cn/': 'cover.md',
+        },
+        // 字数统计
+        count: {
+            countable: true,
+            fontsize: '0.9em',
+            color: 'rgb(90,90,90)',
+            language: 'chinese'
+        },
+        darkMode: {
+            dark: {
+                background: "#1c2022",
+                toggleBtnBg: "#34495e",
+                textColor: "#b4b4b4"
+            },
+            light: {
+                background: "white",
+                toggleBtnBg: "var(--theme-color)",
+                textColor: "var(--theme-color)"
+            }
+        },
+        progress: {
+            position: "top",
+            color: "var(--theme-color,#42b983)",
+            height: "3px",
+        },
+        autoFooter: {
+            name: ' taotie',
+            url: 'https://github.com/taotie6',
+            copyYear: '2018',
+            policy: false,
+            terms: false,
+            cookies: false,
+            onBody: true
+        }
+    }
+</script>
+<script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+<script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify-pangu/lib/pangu.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify-progress@latest/dist/progress.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/@markbattistella/docsify-sidebarfooter@latest"></script>
+</body>
+</html>
